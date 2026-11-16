@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pooja Dental and Prosthodontic Clinic — Faridabad | Implants, Crowns, Bridges & Dentures</title>
+<meta name="description" content="Pooja Dental and Prosthodontic Clinic, Faridabad — specialist care for implants, crowns, bridges and dentures, plus complete family dentistry. Call or WhatsApp to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#0f766e;--brand2:#115e59;--ink:#1c2430;--muted:#5b6572;--bg:#ffffff;--bg2:#e6f4f1;--wa:#25D366;--radius:16px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+h1,h2,h3{font-family:'Fraunces',serif;line-height:1.2;color:var(--ink)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+a{text-decoration:none}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e8ecf1}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
+.logo{font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;color:var(--brand)}
+.logo small{display:block;font-family:'Poppins',sans-serif;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.nav-links{display:none;gap:26px;font-size:.92rem;font-weight:500}
+.nav-links a{color:var(--ink)}
+.nav-cta{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.92rem;transition:.2s;border:2px solid transparent}
+.btn svg{width:18px;height:18px}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(.94)}
+.btn-call{background:var(--brand);color:#fff}
+.btn-call:hover{background:var(--brand2)}
+.btn-ghost{border-color:var(--brand);color:var(--brand);background:transparent}
+.btn-sm{padding:8px 16px;font-size:.85rem}
+.hero{background:linear-gradient(135deg,var(--brand) 0%,var(--brand2) 100%);color:#fff;padding:84px 0 76px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(255,255,255,.18),transparent 45%),radial-gradient(circle at 10% 90%,rgba(255,255,255,.12),transparent 40%)}
+.hero .wrap{position:relative}
+.hero .kicker{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:20px}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:700;max-width:760px}
+.hero p{margin:18px 0 30px;font-size:1.08rem;max-width:640px;color:rgba(255,255,255,.92)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+.hero .btn-ghost{border-color:#fff;color:#fff}
+section{padding:70px 0}
+.sec-head{max-width:680px;margin-bottom:38px}
+.sec-head .tag{color:var(--brand);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.sec-head h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin:8px 0 10px}
+.sec-head p{color:var(--muted)}
+.alt{background:var(--bg2)}
+.grid{display:grid;gap:20px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:#fff;border:1px solid #e8ecf1;border-radius:var(--radius);padding:26px;box-shadow:0 4px 18px rgba(20,30,50,.05)}
+.card .ic{width:52px;height:52px;border-radius:14px;background:var(--bg2);color:var(--brand);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.card .ic svg{width:26px;height:26px}
+.card h3{font-size:1.12rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+.about-flex{display:grid;gap:34px;grid-template-columns:1fr}
+.about-art{border-radius:var(--radius);min-height:280px;background:linear-gradient(150deg,var(--brand),var(--brand2));position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:26px;color:#fff}
+.about-art:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.22),transparent 50%)}
+.about-art .big{position:relative;font-family:'Fraunces',serif;font-size:1.5rem;font-weight:600;max-width:340px}
+.why-list{list-style:none;display:grid;gap:14px}
+.why-list li{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid #e8ecf1;border-radius:12px;padding:16px 18px}
+.why-list .ck{flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center}
+.why-list .ck svg{width:15px;height:15px}
+.gallery-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.tile{border-radius:var(--radius);height:190px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff;position:relative;overflow:hidden}
+.tile:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.45))}
+.tile span{position:relative;font-weight:600;font-size:1.02rem}
+.tile small{position:relative;opacity:.85;font-size:.8rem}
+.t1{background:linear-gradient(140deg,var(--brand),var(--brand2))}
+.t2{background:linear-gradient(140deg,var(--brand2),var(--brand))}
+.t3{background:linear-gradient(140deg,var(--brand),#101828)}
+.t4{background:linear-gradient(140deg,#101828,var(--brand2))}
+.info-box{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e8ecf1;border-radius:var(--radius);padding:24px}
+.info-box .ic{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--bg2);color:var(--brand);display:flex;align-items:center;justify-content:center}
+.info-box .ic svg{width:24px;height:24px}
+.info-box h3{font-size:1.05rem;margin-bottom:4px}
+.info-box p{color:var(--muted);font-size:.94rem}
+.faq-item{background:#fff;border:1px solid #e8ecf1;border-radius:12px;padding:20px 22px;margin-bottom:12px}
+.faq-item h3{font-size:1rem;margin-bottom:6px;font-family:'Poppins',sans-serif;font-weight:600}
+.faq-item p{color:var(--muted);font-size:.94rem}
+.contact-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.final-cta{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;text-align:center;padding:70px 0}
+.final-cta h2{color:#fff;font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px}
+.final-cta p{color:rgba(255,255,255,.9);max-width:560px;margin:0 auto 28px}
+.final-cta .hero-btns{justify-content:center}
+footer{background:#101828;color:#c6cdd8;padding:38px 0 30px;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+footer b{color:#fff}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:30px;height:30px}
+@media(min-width:820px){.nav-links{display:flex}.about-flex{grid-template-columns:1.05fr .95fr;align-items:center}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<div class="logo">Pooja Dental and Prosthodontic Clinic<small>Dental &amp; Prosthodontic Clinic · Faridabad</small></div>
+<nav class="nav-links"><a href="#services">Services</a><a href="#about">About</a><a href="#visit">Visit Us</a><a href="#contact">Contact</a></nav>
+<div class="nav-cta"><a class="btn btn-call btn-sm" href="tel:+919811114723"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call Now</a></div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<span class="kicker">Dental &amp; Prosthodontic Clinic · Faridabad</span>
+<h1>Strong, Natural Smiles — Rebuilt with Care</h1>
+<p>Pooja Dental and Prosthodontic Clinic in Faridabad specialises in restoring missing and damaged teeth — implants, crowns, bridges and dentures — along with complete everyday dental care for the whole family.</p>
+<div class="hero-btns">
+<a class="btn btn-wa" href="https://wa.me/919811114723?text=Namaste%2C%20I%20want%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg> Book an Appointment</a>
+<a class="btn btn-ghost" href="tel:+919811114723"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> +91 98111 14723</a>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="sec-head"><span class="tag">What We Offer</span><h2>Restorative &amp; Complete Dental Care</h2><p>Specialist prosthodontic treatment for missing and damaged teeth, plus everyday dentistry under one roof.</p></div>
+<div class="grid grid-3"><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div><h3>Dental Implants</h3><p>Permanent, natural-feeling replacements for missing teeth that let you eat, speak and smile with confidence.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div><h3>Crowns &amp; Bridges</h3><p>Precisely fitted crowns and bridges that protect weak teeth and close gaps with a natural finish.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div><h3>Complete &amp; Partial Dentures</h3><p>Comfortable, well-fitting dentures designed around your face, bite and everyday life.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div><h3>Root Canal Treatment</h3><p>Gentle, modern RCT that relieves tooth pain and saves your natural tooth wherever possible.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div><h3>Teeth Cleaning &amp; Polishing</h3><p>Professional scaling and polishing that removes plaque and stains and keeps your gums healthy.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></div><h3>Cosmetic Dentistry &amp; Smile Design</h3><p>Whitening and smile corrections planned carefully around the look you want.</p></div></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+<div class="sec-head"><span class="tag">About Us</span><h2>Specialist Care for Restoring Smiles</h2></div>
+<div class="about-flex">
+<div><p style="color:var(--muted);margin-bottom:16px">As a prosthodontic clinic, Pooja Dental focuses on the art and science of replacing and restoring teeth — from a single crown to full dentures and implant-supported teeth.</p><p style="color:var(--muted)">Alongside specialist restorative work, the clinic provides complete general dentistry, so your routine check-ups, fillings and cleaning are all handled under the same roof.</p></div>
+<div class="about-art"><div class="big">A restored tooth should look, feel and work like your own.</div></div>
+</div>
+</div></section>
+
+<section id="why"><div class="wrap">
+<div class="sec-head"><span class="tag">Why Choose Us</span><h2>Why Patients Choose Pooja Dental</h2></div>
+<ul class="why-list"><li><span class="ck"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><div><b>Prosthodontic expertise.</b> Specialist planning for implants, crowns, bridges and dentures — the treatments that rebuild smiles.</div></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><div><b>Clear, honest guidance.</b> Every option and cost is explained in simple words before treatment begins.</div></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><div><b>Comfort-first approach.</b> Gentle techniques and proper anaesthesia keep every procedure as stress-free as possible.</div></li><li><span class="ck"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span><div><b>Hygiene you can trust.</b> Strict sterilisation and clean equipment for every single patient.</div></li></ul>
+</div></section>
+
+<section id="gallery" class="alt"><div class="wrap">
+<div class="sec-head"><span class="tag">Take a Look</span><h2>Restoring Smiles, Every Day</h2></div>
+<div class="gallery-grid"><div class="tile t1"><span>Implant Restorations</span><small>Natural-looking replacements</small></div><div class="tile t2"><span>Crowns &amp; Bridges</span><small>Strength with a seamless finish</small></div><div class="tile t3"><span>Comfortable Dentures</span><small>Fitted to your bite</small></div><div class="tile t4"><span>Complete Family Care</span><small>Everyday dentistry too</small></div></div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+<div class="sec-head"><span class="tag">Timings &amp; Location</span><h2>Visit Us</h2></div>
+<div class="grid grid-2">
+<div class="info-box"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/></svg></div><div><h3>Timings</h3><p>Open Monday to Sunday. Please call or WhatsApp ahead to book your appointment and avoid waiting.</p></div></div>
+<div class="info-box"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg></div><div><h3>Find Us</h3><p>Pooja Dental and Prosthodontic Clinic, Faridabad, Haryana<br><a href="https://www.google.com/maps/search/?api=1&query=Pooja+Dental+and+Prosthodontic+Clinic+Faridabad" target="_blank" rel="noopener" style="color:var(--brand);font-weight:600">Open in Google Maps →</a></p></div></div>
+</div>
+</div></section>
+
+<section id="faq" class="alt"><div class="wrap">
+<div class="sec-head"><span class="tag">Good to Know</span><h2>Questions, Answered</h2></div>
+<div class="faq-item"><h3>I have missing teeth. What are my options?</h3><p>Depending on your case, implants, a bridge or dentures may suit you best. A consultation and examination will help the doctor recommend the right option.</p></div><div class="faq-item"><h3>Are dentures comfortable?</h3><p>Modern dentures are custom-made for your mouth. A good fit makes speaking and eating feel natural again.</p></div><div class="faq-item"><h3>Do I need an appointment?</h3><p>Booking on call or WhatsApp is best, so your consultation gets proper time and attention.</p></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="sec-head"><span class="tag">Contact</span><h2>Get in Touch</h2><p>Questions about a treatment or want to book a check-up? Call or WhatsApp — we reply quickly.</p></div>
+<div class="contact-grid">
+<div class="info-box"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></div><div><h3>Call Us</h3><p><a href="tel:+919811114723" style="color:var(--brand);font-weight:600">+91 98111 14723</a><br>Tap to call directly.</p></div></div>
+<div class="info-box"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg></div><div><h3>WhatsApp Us</h3><p><a href="https://wa.me/919811114723" target="_blank" rel="noopener" style="color:var(--brand);font-weight:600">Chat on WhatsApp</a><br>Fastest way to reach us.</p></div></div>
+<div class="info-box"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg></div><div><h3>Visit Us</h3><p>Pooja Dental and Prosthodontic Clinic, Faridabad, Haryana</p></div></div>
+</div>
+</div></section>
+
+<section class="final-cta"><div class="wrap">
+<h2>Missing a Tooth? Let&#x27;s Fix That Smile</h2><p>Book a consultation today and find the restoration option that fits you best.</p>
+<div class="hero-btns">
+<a class="btn btn-wa" href="https://wa.me/919811114723?text=Namaste%2C%20I%20want%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg> Book an Appointment</a>
+<a class="btn btn-ghost" href="tel:+919811114723"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> Call +91 98111 14723</a>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<div><b>Pooja Dental and Prosthodontic Clinic</b> · Faridabad</div>
+<div>Website by <b>Shree Shyam Web Designers</b></div>
+</div></footer>
+
+<a class="wa-float" href="https://wa.me/919811114723?text=Namaste%2C%20I%20want%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5-.3.6-.6.8-.4 1.1.7 1.2 1.6 2 2.8 2.6.3.2.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg></a>
+</body>
+</html>
